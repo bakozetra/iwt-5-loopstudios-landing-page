@@ -1,0 +1,30 @@
+footer {
+  background-color:$color-black;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  nav {
+    width: 90%;
+    margin: auto;
+    .link_list {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 2rem;
+     a {
+      color: white;
+      padding-bottom: 1rem;
+     }
+    }
+  }
+}
+@media(min-width : 375px) {
+  footer {
+    nav {
+      ul {
+        display: flex;
+      }
+      
+    }
+    
+  }
+}

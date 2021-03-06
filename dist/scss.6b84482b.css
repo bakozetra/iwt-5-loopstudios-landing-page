@@ -1,0 +1,270 @@
+body {
+  width: 100%;
+  font-size: 15px;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body > div {
+  background-image: url(/image-hero.3d23263c.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body > div div {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 4rem;
+}
+body > div div header {
+  padding-bottom: 4rem;
+}
+body > div div .navigation {
+  transform: translateX(-180px);
+  position: absolute;
+}
+body > div div .navigation ul {
+  position: absolute;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+}
+body > div div .navigation ul li {
+  background-repeat: no-repeat;
+  background-position: 10px 15px;
+  transform: translate(29px, 80px);
+}
+body > div div .navigation ul li a {
+  list-style: none;
+  text-decoration: none;
+  line-height: 50px;
+  margin-inline-start: 20px;
+  padding-inline-start: 25px;
+  color: #a6adb4;
+}
+body > div div nav + div {
+  width: 318px;
+  height: 150px;
+  border: 2px white solid;
+  max-width: 100%;
+  margin: auto;
+  padding-bottom: 8rem;
+}
+body > div div nav + div h1 {
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-weight: 400;
+  width: 80%;
+  margin: auto;
+  padding-top: 2rem;
+  font-size: 38px;
+}
+
+.menu-header {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-header label {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  list-style: none;
+  text-decoration: none;
+  background-image: url(/icon-hamburger.cb455b0f.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 1rem;
+}
+.menu-header button {
+  display: none;
+}
+
+body > [type=checkbox] {
+  display: none;
+}
+
+.checkbox_input[type=checkbox]:checked ~ div div header label {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: transparent;
+  background: none;
+  width: 100%;
+  height: 100%;
+}
+
+.checkbox_input:checked ~ div div nav {
+  transform: translateX(0);
+  position: absolute;
+  top: 5rem;
+  bottom: 4rem;
+  right: 1rem;
+  left: 1rem;
+  z-index: 1;
+  width: 250px;
+  background-color: black;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.25);
+}
+
+span {
+  display: none;
+}
+
+@media (min-width: 375px) {
+  body > div div .incon-menu {
+    background-image: none;
+  }
+  body > div div .navigation {
+    padding: 0;
+    background-color: transparent;
+    left: 0;
+    right: 0;
+    top: 0;
+    box-shadow: none;
+    transform: none;
+    transition: none;
+  }
+  body > div div .navigation ul {
+    flex-direction: row;
+    display: flex;
+    position: absolute;
+    right: 4rem;
+    position: absolute;
+  }
+  body > div div .navigation ul li {
+    background-repeat: no-repeat;
+    background-position: 10px 15px;
+    transform: none;
+  }
+  body > div div .navigation ul li a {
+    font-size: 12px;
+    color: white;
+  }
+  body > div div nav + div {
+    margin: 0;
+  }
+
+  .profile {
+    display: none;
+  }
+
+  .menu-header button {
+    display: block;
+    position: absolute;
+    right: 4rem;
+  }
+}
+main {
+  background: white;
+  padding-top: 2rem;
+}
+main article, main section {
+  width: 90%;
+  margin: auto;
+}
+main article img, main section img {
+  width: 100%;
+}
+main article p {
+  color: dimgray;
+}
+main section li {
+  position: relative;
+  padding-bottom: 2rem;
+}
+main section li p {
+  position: absolute;
+  color: white;
+  top: 2rem;
+  left: 2rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  width: 30%;
+  padding-bottom: 1.5rem;
+}
+
+@media (min-width: 375px) {
+  main h2 {
+    color: #8c8c8c;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  main article {
+    display: flex;
+    position: relative;
+  }
+  main article img {
+    width: 60%;
+  }
+  main article div {
+    background-color: white;
+    background-color: white;
+    width: 40%;
+    padding-bottom: 6rem;
+    margin-left: -9rem;
+    max-width: 100%;
+    padding-left: 6rem;
+    padding-top: 4rem;
+    margin-top: 14rem;
+  }
+  main section nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  main section nav p {
+    top: auto;
+    bottom: 1.3rem;
+    width: 37%;
+  }
+}
+footer {
+  background-color: black;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+footer nav {
+  width: 90%;
+  margin: auto;
+}
+footer nav .link_list {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+footer nav .link_list a {
+  color: white;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 375px) {
+  footer nav ul {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=/scss.6b84482b.css.map */
